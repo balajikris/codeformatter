@@ -13,6 +13,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.CodeAnalysis.Text;
+using Microsoft.DotNet.CodeFormatter.Analyzers;
 using Microsoft.DotNet.CodeFormatter.Analyzers.Utilities;
 
 namespace Microsoft.CodeAnalysis.CSharp.Diagnostics.TypingStyles
@@ -54,7 +55,8 @@ namespace Microsoft.CodeAnalysis.CSharp.Diagnostics.TypingStyles
                 _message,
                 "Style",
                 severity,
-                isEnabledByDefault: true);
+                isEnabledByDefault: true,
+                customTags: new[] { RuleType.LocalSemantic });
 
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics =>
             ImmutableArray.Create(_infoDiagnosticDescriptor);

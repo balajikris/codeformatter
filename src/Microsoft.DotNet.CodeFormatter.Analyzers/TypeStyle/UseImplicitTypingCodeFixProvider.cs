@@ -32,8 +32,7 @@ namespace Microsoft.CodeAnalysis.CSharp.CodeFixes.UseImplicitTyping
 
             var codeAction = CodeAction.Create(
                 Resources.UseImplicitType,
-                c => ReplaceTypeWithVarAsync(document, root, node), 
-                equivalenceKey: Resources.UseImplicitType);
+                c => ReplaceTypeWithVarAsync(document, root, node));
 
             context.RegisterCodeFix(codeAction, context.Diagnostics.First());
         }

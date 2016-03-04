@@ -38,8 +38,7 @@ namespace Microsoft.CodeAnalysis.CSharp.CodeFixes.UseImplicitTyping
 
             var codeAction = CodeAction.Create(
                 Resources.UseExplicitType,
-                c => HandleDeclarationAsync(document, root, node, context.CancellationToken),
-                equivalenceKey: Resources.UseExplicitType);
+                c => HandleDeclarationAsync(document, root, node, context.CancellationToken));
 
             context.RegisterCodeFix(codeAction, context.Diagnostics.First());
         }
