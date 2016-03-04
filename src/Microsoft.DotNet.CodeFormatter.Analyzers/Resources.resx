@@ -162,4 +162,16 @@
   <data name="UnwrittenWritableFieldFixer_Title" xml:space="preserve">
     <value>Mark field as readonly</value>
   </data>
+  <data name="UseExplicitType" xml:space="preserve">
+    <value>use explicit type instead of 'var'</value>
+  </data>
+  <data name="UseExplicitTypeDiagnosticTitle" xml:space="preserve">
+    <value>use explicit type</value>
+  </data>
+  <data name="UseImplicitType" xml:space="preserve">
+    <value>use 'var' instead of explicit type</value>
+  </data>
+  <data name="UseImplicitTypeDiagnosticTitle" xml:space="preserve">
+    <value>use var</value>
+  </data>
 </root>

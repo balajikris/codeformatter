@@ -16,8 +16,8 @@ using Microsoft.CodeAnalysis.CSharp.Symbols;
 
 namespace Microsoft.DotNet.CodeFormatter.Analyzers
 {
-    [Export(typeof(DiagnosticAnalyzer))]
-    [DiagnosticAnalyzer(LanguageNames.CSharp)]
+    //[Export(typeof(DiagnosticAnalyzer))]
+    //[DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class ProvideExplicitVariableTypeAnalyzer : DiagnosticAnalyzer
     {
         internal const string DiagnosticId = AnalyzerIds.ProvideExplicitVariableType;

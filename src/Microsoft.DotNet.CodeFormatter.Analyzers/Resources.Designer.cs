@@ -194,5 +194,41 @@ namespace Microsoft.DotNet.CodeFormatter.Analyzers {
                 return ResourceManager.GetString("UnwrittenWritableFieldFixer_Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to use explicit type instead of &apos;var&apos;.
+        /// </summary>
+        internal static string UseExplicitType {
+            get {
+                return ResourceManager.GetString("UseExplicitType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to use explicit type.
+        /// </summary>
+        internal static string UseExplicitTypeDiagnosticTitle {
+            get {
+                return ResourceManager.GetString("UseExplicitTypeDiagnosticTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to use &apos;var&apos; instead of explicit type.
+        /// </summary>
+        internal static string UseImplicitType {
+            get {
+                return ResourceManager.GetString("UseImplicitType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to use var.
+        /// </summary>
+        internal static string UseImplicitTypeDiagnosticTitle {
+            get {
+                return ResourceManager.GetString("UseImplicitTypeDiagnosticTitle", resourceCulture);
+            }
+        }
     }
 }

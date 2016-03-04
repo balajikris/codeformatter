@@ -18,7 +18,7 @@ using Microsoft.CodeAnalysis.Editing;
 
 namespace Microsoft.DotNet.CodeFormatter.Analyzers
 {
-    [ExportCodeFixProvider(LanguageNames.CSharp)]
+    //[ExportCodeFixProvider(LanguageNames.CSharp)]
     public class ProvideExplicitVariableTypeFixer : CodeFixProvider
     {
         public override ImmutableArray<string> FixableDiagnosticIds

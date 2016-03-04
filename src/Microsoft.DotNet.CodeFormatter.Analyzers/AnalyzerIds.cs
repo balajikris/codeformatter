@@ -11,5 +11,6 @@ namespace Microsoft.DotNet.CodeFormatter.Analyzers
         public const string OptimizeNamespaceImports = "DNS1003";
         public const string ProvideExplicitVariableType     = "DNS1004";
         public const string PlaceImportsOutsideNamespace = "DNS1005";
+        public const string ProvideImplicitVariableType = "DNS1006";
     }
 }

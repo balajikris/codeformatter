@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Diagnostics.TypingStyles;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.DotNet.CodeFormatting;
@@ -104,8 +105,10 @@ namespace Microsoft.DotNet.CodeFormatter.Analyzers
         internal static IEnumerable<string> AllAnalyzerNames = new string[] {
             ExplicitThisAnalyzer.AnalyzerName,
             OptimizeNamespaceImportsAnalyzer.AnalyzerName,
-            ProvideExplicitVariableTypeAnalyzer.AnalyzerName, 
-            UnwrittenWritableFieldAnalyzer.AnalyzerName
+            // ProvideExplicitVariableTypeAnalyzer.AnalyzerName, 
+            UnwrittenWritableFieldAnalyzer.AnalyzerName,
+            CSharpUseImplicitTypingDiagnosticAnalyzer.AnalyzerName,
+            CSharpUseExplicitTypingDiagnosticAnalyzer.AnalyzerName,
         };
     }
 }

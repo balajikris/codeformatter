@@ -97,12 +97,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TypeStyle\CSharpTypingStyleDiagnosticAnalyzerBase.cs" />
+    <Compile Include="TypeStyle\CSharpTypingStyleDiagnosticAnalyzerBase.State.cs" />
+    <Compile Include="TypeStyle\CSharpUseExplicitTypingDiagnosticAnalyzer.cs" />
+    <Compile Include="TypeStyle\CSharpUseImplicitTypingDiagnosticAnalyzer.cs" />
+    <Compile Include="TypeStyle\TypeStyle.cs" />
+    <Compile Include="TypeStyle\TypeStyleHelper.cs" />
+    <Compile Include="TypeStyle\UseExplicitTypingCodeFixProvider.cs" />
+    <Compile Include="TypeStyle\UseImplicitTypingCodeFixProvider.cs" />
     <Compile Include="UnwrittenWritableFieldAnalyzer.cs" />
     <Compile Include="UnwrittenWritableFieldFixer.cs" />
     <Compile Include="ProvideExplicitVariableTypeAnalyzer.cs" />
     <Compile Include="ProvideExplicitVariableTypeFixer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceHelper.cs" />
+    <Compile Include="Utilities\ExpressionSyntaxExtensions.cs" />
+    <Compile Include="Utilities\ISymbolExtensions.cs" />
+    <Compile Include="Utilities\ITypeSymbolExtensions.cs" />
+    <Compile Include="Utilities\SimpleNameSyntaxExtensions.cs" />
+    <Compile Include="Utilities\SyntaxNodeExtensions.cs" />
+    <Compile Include="Utilities\TypeSyntaxExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
